@@ -124,7 +124,7 @@ const DailyStats = (props) => {
       overflow: true,
       offsetY: -12,
       fill: new Fill({
-        color: "#000",
+        color: "#0000FF",
       }),
       stroke: new Stroke({
         color: "#fff",
