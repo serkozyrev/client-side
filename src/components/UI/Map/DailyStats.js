@@ -17,13 +17,9 @@ const DailyStats = (props) => {
   const authCtx = useContext(AuthContext);
   let eqWorksData, cnTowerData, niagaraData, harbourData;
   let eqWorks, cnTower, niagara, vancHarb;
-  let date_list = [];
   const [map, setMap] = useState();
   const [featuresLayer, setFeaturesLayer] = useState();
 
-  for (const item in authCtx.resultDailyEvents) {
-    date_list.push(item);
-  }
   let dataSelect = Object.keys(authCtx.resultStatsDaily)
     .filter((key) => key === props.date)
     .reduce((obj, key) => {
