@@ -182,7 +182,7 @@ const BarCharts = (props) => {
     for (const item in dataSelect) {
       for (const itemValue in dataSelect[item]) {
         events.push(dataSelect[item][itemValue]["events"]);
-        hours.push(dataSelect[item][itemValue]["hour"]);
+        hours.push(`${dataSelect[item][itemValue]["hour"]}:00 hour`);
       }
     }
 
@@ -257,7 +257,7 @@ const BarCharts = (props) => {
     for (const item in dataSelect) {
       for (const itemValue in dataSelect[item]) {
         revenue.push(dataSelect[item][itemValue]["revenue"]);
-        hours.push(dataSelect[item][itemValue]["hour"]);
+        hours.push(`${dataSelect[item][itemValue]["hour"]}:00 hour`);
         impressions.push(dataSelect[item][itemValue]["impressions"]);
         clicks.push(dataSelect[item][itemValue]["clicks"]);
       }
